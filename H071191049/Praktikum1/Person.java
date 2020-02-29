@@ -12,7 +12,7 @@ public class Person{
         for(int i=0;i<modifName.length;i++){
             newName+= modifName[i].substring(0,1).toUpperCase()+modifName[i].substring(1).toLowerCase()+" ";
         }
-        name = newName;
+        this.name = newName;
     }
     public void setGender(boolean isMale){
         this.isMale = isMale;
