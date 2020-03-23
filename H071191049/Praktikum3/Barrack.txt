@@ -1,0 +1,7 @@
+Kirito;Berseker#
+Nadiem;Programmer#
+Dracule;Necromamancer#
+Naruto;Shinobi#
+Meliodas;Angle#
+Crusader;Guardian#
+
