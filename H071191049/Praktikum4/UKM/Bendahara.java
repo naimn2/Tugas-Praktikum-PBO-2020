@@ -39,7 +39,7 @@ public class Bendahara extends PengurusInti{
                 if(inp==0){
                     return;
                 }
-                System.out.println("Biaya Acara : ");
+                System.out.print("Biaya Acara : ");
                 int inp1= san.nextInt();
                 if(inp1>sisaCash-kegiatan.get(inp-1).getBiaya()){
                     System.out.println("Cash Milik UKM Tidak Cukup");

@@ -35,6 +35,7 @@ public class Anggota {
         System.out.println("Jabatan  : "+jabatan);
         System.out.println("Angkatan : "+angkatan);
         System.out.println("Tugas    : "+tugas);
+        akhiriPerintah();
     } 
     protected void daftarKegiatan(){
         if(kegiatan.size()==0){
