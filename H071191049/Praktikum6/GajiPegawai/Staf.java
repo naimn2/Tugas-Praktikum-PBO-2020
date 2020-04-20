@@ -1,8 +1,5 @@
 public class Staf extends Pegawai{
     private int kehadiran;
-    Staf(){
-        super();
-    }
     @Override
     public void action() {
         System.out.print("Nama Staf ::> ");
@@ -11,8 +8,8 @@ public class Staf extends Pegawai{
         kehadiran = san.nextInt();
     }
     @Override
-    protected void gajiTambahan() {
-        super.gajiTambahan();
+    protected void hitungBonus() {
+        super.hitungBonus();
         bonus = kehadiran*50000;
     }
 }

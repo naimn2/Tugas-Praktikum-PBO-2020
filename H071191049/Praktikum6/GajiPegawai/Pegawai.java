@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Pegawai {
-    protected int gaji = 2500000;
+    protected final int gaji = 2500000;
     protected int bonus;
     protected Scanner san = new Scanner(System.in);
     protected String name;
@@ -13,9 +13,9 @@ public class Pegawai {
         return name;
     }
     public int getGaji(){
-        gajiTambahan();
+        hitungBonus();
         return gaji+bonus;
     }
-    protected void gajiTambahan(){
+    protected void hitungBonus(){
     }
 }

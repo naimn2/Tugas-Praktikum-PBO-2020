@@ -10,8 +10,8 @@ public class Dosen extends Pegawai{
     }
 
     @Override
-    protected void gajiTambahan() {
-        super.gajiTambahan();
+    protected void hitungBonus() {
+        super.hitungBonus();
         bonus = sks*120000;
     }
 }
