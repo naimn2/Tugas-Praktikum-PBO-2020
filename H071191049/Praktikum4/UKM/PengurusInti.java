@@ -1,6 +1,6 @@
 
 public class PengurusInti extends Anggota{
-
+    protected final String visiMisi = "Menyalurkan bakat dan minat pemrograman";
     @Override
     public void action() {
         super.action();
@@ -51,9 +51,11 @@ public class PengurusInti extends Anggota{
             daftarKegiatan();
         }
     }
-    @Override
-    protected void getStatus(){
-        System.out.println("Jabatan  : "+jabatan);
+    protected void showVisiMisi() {
+        System.out.println("=================================================");
+        System.out.println("                 VISI MISI");
+        System.out.println("=================================================");
+        System.out.println(visiMisi);
         akhiriPerintah();
-    } 
+    }
 }

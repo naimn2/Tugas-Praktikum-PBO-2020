@@ -18,14 +18,7 @@ public class WakilKetua extends PengurusInti{
     protected void inputAction(int input) {
         super.inputAction(input);
         if(input==5){
-            visiMisi();
+            showVisiMisi();
         }
-    }
-    public void visiMisi() {
-        System.out.println("=================================================");
-        System.out.println("                 VISI MISI");
-        System.out.println("=================================================");
-        System.out.println(visiMisi);
-        akhiriPerintah();
     }
 }

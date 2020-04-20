@@ -1,6 +1,6 @@
 
 public class Bendahara extends PengurusInti{
-    int cash = 5000000;
+    private final int cash = 5000000;
     Bendahara(){
         nama = "Shiro";
         jabatan = pengurusIntis.get(3);
@@ -19,13 +19,10 @@ public class Bendahara extends PengurusInti{
     protected void inputAction(int input) {
         super.inputAction(input);
         if(input==5){
-            System.out.println("Cash : "+getCash());
+            System.out.println("Cash : "+cash);
         }else if(input==6){
             aturBiayaAcara();
         }
-    }
-    private int getCash(){
-        return cash;
     }
     private void aturBiayaAcara(){
         daftarKegiatan();

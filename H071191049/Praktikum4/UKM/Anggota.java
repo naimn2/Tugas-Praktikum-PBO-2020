@@ -4,9 +4,8 @@ public class Anggota {
     protected String jabatan;
     protected int angkatan;
     protected String tugas;
-    protected final String visiMisi = "Menyalurkan bakat dan minat pemrograman";
     protected Scanner san = new Scanner(System.in);
-    protected boolean jalankan = true;
+    private boolean jalankan = true;
     protected DataSource dataSource = new DataSource();
     protected ArrayList<RencanaKegiatan> kegiatan = dataSource.getRencanaKegiatan();
     protected ArrayList<String> pengurusIntis = new ArrayList<>();
@@ -28,7 +27,7 @@ public class Anggota {
         System.out.println("[2] Daftar Kegiatan");
     }
 
-    protected void getStatus(){
+    protected void showStatus(){
         System.out.println("=================================================");
         System.out.println("                   STATUS");
         System.out.println("=================================================");
@@ -61,7 +60,7 @@ public class Anggota {
                     return;
                 }
                 san.nextLine();
-                kegiatan.get(inp-1).getInfo();
+                kegiatan.get(inp-1).showInfo();
             } catch (Exception e) {
                 san.nextLine();
                 System.out.println("Input tidak valid");
@@ -77,7 +76,7 @@ public class Anggota {
             jalankan=false;
         }
         else if(input==1){
-            getStatus();
+            showStatus();
         }
         else if(input==2){
             infoKegiatan();

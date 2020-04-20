@@ -11,7 +11,7 @@ public class RencanaKegiatan {
         this.jadwal = jadwal;
         this.tempat = tempat;
     }
-    public void getInfo(){
+    public void showInfo(){
         System.out.println("=================================================");
         System.out.println("               INFO KEGIATAN");
         System.out.println("=================================================");
