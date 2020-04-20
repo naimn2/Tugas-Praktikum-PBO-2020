@@ -11,7 +11,7 @@ public class CalculatorTemperature extends Converter implements Temperature {
 
     @Override
     public double celciusToFahrenheit(double value) {
-        return (value*(9/5d)) + 32;
+        return (value*(9.0/5.0)) + 32;
     }
 
     @Override

@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class Main {
     static Scanner inp = new Scanner(System.in);
     static Boolean jalankan = true;
-    static Double nilaiA;
-    static Double nilaiB;
-    static Double nilaiC;
+    static double nilaiA;
+    static double nilaiB;
+    static double nilaiC;
     public static void main(String[] args) {
         Bangun bangun;
         while (jalankan) {
