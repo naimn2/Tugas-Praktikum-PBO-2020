@@ -1,2 +1,5 @@
-Bootcamp JavaScript;27-April-2021;TNR;800000;Diablo-Kuroko-;
-Meetup Programmer;21-Mei-2020;Sains Building;2300000;Lemon-Green Tea-;
+Meetup Programmer;21-Mei-2020;Sains Building;2300000;Lemon-Green Tea-Dark Hat-;
+Contoh;27-April-2001;TNR;50000;;
+sdfsd;23-Mei-2019;TNR;0;;
+asdfds;28-Mei-2019;asdas;0;;
+adfa;23-Mei-2019;afad;0;;

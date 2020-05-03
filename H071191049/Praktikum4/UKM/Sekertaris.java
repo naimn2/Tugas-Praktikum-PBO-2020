@@ -4,7 +4,7 @@ public class Sekertaris extends PengurusInti{
         nama = pengurusIntis.get(2);
         jabatan = "Sekertaris";
         angkatan = 2019;
-        tugas = "Mengatur Berkas";
+        tugas = "Menata Daftar Pengurus";
     }
     @Override
     public void action() {

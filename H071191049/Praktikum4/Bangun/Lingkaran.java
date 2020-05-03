@@ -10,4 +10,9 @@ public class Lingkaran extends Bangun{
         luas = nilaiA*nilaiA*pI;
         return luas;
     }
+    @Override
+    public double getKeliling() {
+        keliling = 2*pI*nilaiA;
+        return keliling;
+    }
 }

@@ -9,5 +9,10 @@ public class Jajargenjang extends Bangun{
         luas = (nilaiA*nilaiB)/2;
         return luas;
     }
+    @Override
+    public double getKeliling() {
+        keliling = 2*(nilaiA+nilaiB);
+        return keliling;
+    }
 
 }

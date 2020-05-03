@@ -10,4 +10,9 @@ public class Balok extends PersegiPanjang{
         volume = getLuas()*nilaiC;
         return volume;
     }
+    @Override
+    public double getLuasPermukaan() {
+        luasPermukaan = (2*nilaiA*nilaiB)+(2*nilaiA*nilaiC)+(2*nilaiB*nilaiC);
+        return luasPermukaan;
+    }
 }

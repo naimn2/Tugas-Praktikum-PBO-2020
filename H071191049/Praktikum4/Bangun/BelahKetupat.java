@@ -9,4 +9,9 @@ public class BelahKetupat extends Bangun{
         luas = nilaiA*nilaiA/2;
         return luas;
     }
+    @Override
+    public double getKeliling() {
+        keliling = 4*nilaiA;
+        return keliling;
+    }
 }

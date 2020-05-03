@@ -1,9 +1,11 @@
 public class Trapesium extends Bangun {
     public Trapesium(double nilaiA, double nilaiB, double nilaiC) {
-        super();
-        this.nilaiA = nilaiA;
-        this.nilaiB = nilaiB;
-        this.nilaiC = nilaiC;
+        super(nilaiA, nilaiB, nilaiC);
+        namaBangun = "Trapesium";
+    }
+    public Trapesium(double nilaiA, double nilaiB, double nilaiC, double nilaiD) {
+        super(nilaiA, nilaiB, nilaiC);
+        this.nilaiD = nilaiD;
         namaBangun = "Trapesium";
     }
     @Override
@@ -11,6 +13,9 @@ public class Trapesium extends Bangun {
         luas = 0.5*(nilaiA+nilaiB)*nilaiC;
         return luas;
     }
-
-
+    @Override
+    public double getKeliling() {
+        keliling = nilaiA+nilaiB+nilaiC+nilaiD;
+        return keliling;
+    }
 }

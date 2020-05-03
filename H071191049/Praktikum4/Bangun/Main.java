@@ -5,6 +5,9 @@ public class Main {
     static double nilaiA;
     static double nilaiB;
     static double nilaiC;
+    static double nilaiD;
+    static double nilaiE;
+    static int dicari;
     public static void main(String[] args) {
         Bangun bangun;
         while (jalankan) {
@@ -26,24 +29,43 @@ public class Main {
             }
             switch (pilih) {
                 case 1:
+                    cariApa(pilih);
                     bangun = bangunDatar();
                     if (bangun == null) {
                         continue;
                     }
                     System.out.println("---------------------------------");
-                    System.out.printf("Jenis \t: %s\n", bangun.getName());
-                    System.out.printf("Luas \t: %.3f\n", bangun.getLuas());
+                    System.out.printf("Jenis    : %s\n", bangun.getName());
+                    switch (dicari) {
+                        case 1:
+                            System.out.printf("Luas     : %f\n",bangun.getLuas());
+                            break;
+                        case 2:
+                            System.out.printf("Keliling : %f\n",bangun.getKeliling());
+                        default:
+                            break;
+                    }
                     System.out.println("---------------------------------");
                     jalankan = akhiriProgram();
                     break;
                 case 2:
+                    cariApa(pilih);
                     bangun = bangunRuang();
                     if (bangun == null) {
                         continue;
                     }
                     System.out.println("---------------------------------");
-                    System.out.printf("Jenis \t: %s\n", bangun.getName());
-                    System.out.printf("Volume \t: %.3f\n", bangun.getVolume());
+                    System.out.printf("Jenis          : %s\n", bangun.getName());
+                    switch (dicari) {
+                        case 1:
+                            System.out.printf("Volume         : %f\n", bangun.getVolume());
+                            break;
+                        case 2:
+                            System.out.printf("Luas Permukaan : %f\n", bangun.getLuasPermukaan());
+                            break;
+                        default:
+                            break;
+                    }
                     System.out.println("---------------------------------");
                     jalankan = akhiriProgram();
                     break;
@@ -113,11 +135,21 @@ public class Main {
                     nilaiA = inp.nextDouble();
                     return new Lingkaran(nilaiA);
                 case 4:
-                    System.out.print("Input Alas : ");
-                    nilaiA = inp.nextDouble();
-                    System.out.print("Input Tinggi : ");
-                    nilaiB = inp.nextDouble();
-                    return new Segitiga(nilaiA, nilaiB);
+                    if(dicari==1){
+                        System.out.print("Input Alas : ");
+                        nilaiA = inp.nextDouble();
+                        System.out.print("Input Tinggi : ");
+                        nilaiB = inp.nextDouble();
+                        return new Segitiga(nilaiA, nilaiB);
+                    }else{
+                        System.out.print("Input sisi1 : ");
+                        nilaiA = inp.nextDouble();
+                        System.out.print("Input sisi2 : ");
+                        nilaiB = inp.nextDouble();
+                        System.out.print("Input sisi3 : ");
+                        nilaiC = inp.nextDouble();
+                        return new Segitiga(nilaiA, nilaiB, nilaiC);
+                    }
                 case 5:
                     System.out.print("Input sisi Atas : ");
                     nilaiA = inp.nextDouble();
@@ -125,21 +157,26 @@ public class Main {
                     nilaiB = inp.nextDouble();
                     System.out.print("Input tinggi : ");
                     nilaiC = inp.nextDouble();
+                    if(dicari==2){
+                        System.out.print("Input sisiMiring : ");
+                        nilaiD = inp.nextDouble();
+                        return new Trapesium(nilaiA, nilaiB, nilaiC, nilaiD);
+                    }
                     return new Trapesium(nilaiA, nilaiB, nilaiC);
                 case 6:
                     System.out.print("Input Alas : ");
                     nilaiA = inp.nextDouble();
-                    System.out.print("Input Tinggi : ");
+                    System.out.print(dicari==1?"Input Tinggi : ":"Input Sisi Miring : ");
                     nilaiB = inp.nextDouble();
                     return new Jajargenjang(nilaiA, nilaiB);
                 case 7:
-                    System.out.print("Input Diagonal : ");
+                    System.out.print(dicari==1?"Input Diagonal : ":"Input Sisi : ");
                     nilaiA = inp.nextDouble();
                     return new BelahKetupat(nilaiA);
                 case 8:
-                    System.out.print("Input Diagonal 1 : ");
+                    System.out.print(dicari==1?"Input Diagonal 1 : ":"Input Sisi 1 : ");
                     nilaiA = inp.nextDouble();
-                    System.out.print("Input Diagonal 2 : ");
+                    System.out.print(dicari==1?"Input Diagonal 2 : ":"Input Sisi 2 : ");
                     nilaiB = inp.nextDouble();
                     return new LayangLayang(nilaiA, nilaiB);
                 case 0:
@@ -198,10 +235,13 @@ public class Main {
                     nilaiA = inp.nextDouble();
                     return new Bola(nilaiA);
                 case 4:
-                    System.out.print("Input Panjang : ");
-                    nilaiA = inp.nextDouble();
                     System.out.print("Input Jari-jari : ");
                     nilaiB = inp.nextDouble();
+                    if(dicari==2){
+                        return new Tabung(nilaiB);
+                    }
+                    System.out.print("Input Panjang : ");
+                    nilaiA = inp.nextDouble();
                     return new Tabung(nilaiA, nilaiB);
                 case 5:
                     System.out.print("Input Sisi 1 Segitiga : ");
@@ -210,6 +250,13 @@ public class Main {
                     nilaiB = inp.nextDouble();
                     System.out.print("Input Tinggi Prisma : ");
                     nilaiC = inp.nextDouble();
+                    if(dicari==2){
+                        System.out.print("Input Sisi Alas Segitiga : ");
+                        nilaiD = inp.nextDouble();
+                        System.out.print("Input Tinggi Segitiga : ");
+                        nilaiE = inp.nextDouble();
+                        return new PrismaSegitiga(nilaiA, nilaiB, nilaiD, nilaiC, nilaiE);
+                    }
                     return new PrismaSegitiga(nilaiA, nilaiB, nilaiC);
                 case 6:
                     System.out.print("Input Alas Segitiga : ");
@@ -245,5 +292,41 @@ public class Main {
             bangunRuang();
         }
         return null;
+    }
+    public static void cariApa(int pilih) {
+        switch (pilih) {
+            case 1:
+                System.out.println("---------------------------------");
+                System.out.println("[1] Luas Bangun Datar");
+                System.out.println("[2] Keliling Bangun Datar");
+                System.out.println("[0] Keluar");
+                break;
+            case 2:
+                System.out.println("---------------------------------");
+                System.out.println("[1] Volume Bangun Ruang");
+                System.out.println("[2] Luas Permukaan Bangun Ruang");
+                System.out.println("[0] Keluar");
+                break;
+            default:
+                System.out.println("Input Tidak Valid");
+                cariApa(pilih);
+        }
+        System.out.print("> ");
+        int input = -1;
+        try {
+            input = inp.nextInt();
+        } catch (Exception e){
+            inp.nextLine();
+            System.out.println("Input tidak valid");
+            cariApa(pilih);
+        }
+        if(input!=2 && input!=1 && input!=0){
+            System.out.println("Input Tidak Valid");
+            cariApa(pilih);
+        }else if(input==0){
+            akhiriProgram();
+        }else{
+            dicari = input;
+        }
     }
 }

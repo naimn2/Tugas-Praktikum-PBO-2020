@@ -1,3 +1,3 @@
 
 ## DIAGRAM CLASS PROGRAM BANGUN 
-![DiagramClass](https://user-images.githubusercontent.com/54715920/79707269-7d0c3200-82ee-11ea-87f3-db6825755d65.jpg)
+![BangunDiagramClass](https://user-images.githubusercontent.com/54715920/80896280-69fe5680-8d1f-11ea-90fc-d7b7a69bee7a.jpg)

@@ -9,4 +9,10 @@ public class Kerucut extends Lingkaran {
         volume = getLuas()*nilaiB;
         return volume;
     }
+    @Override
+    public double getLuasPermukaan() {
+        double s = Math.sqrt(Math.pow((nilaiB/2),2)+Math.pow(nilaiA, 2));
+        luasPermukaan = getLuas()+(pI*nilaiA*s);
+        return luasPermukaan;
+    }
 }

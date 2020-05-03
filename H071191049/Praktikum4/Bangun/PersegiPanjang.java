@@ -9,4 +9,9 @@ public class PersegiPanjang extends Bangun{
         luas = nilaiA*nilaiB;
         return luas;
     }
+    @Override
+    public double getKeliling() {
+        keliling = 2*(nilaiA+nilaiB);
+        return keliling;
+    }
 }

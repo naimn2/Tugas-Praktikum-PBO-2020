@@ -9,4 +9,9 @@ public class Kubus extends Persegi{
         volume = getLuas()*nilaiA;
         return volume;
     }
+    @Override
+    public double getLuasPermukaan() {
+        luasPermukaan = 6*getLuas();
+        return luasPermukaan;
+    }
 }

@@ -2,8 +2,12 @@ public class Bangun {
     protected double nilaiA;
     protected double nilaiB;
     protected double nilaiC;
+    protected double nilaiD;
+    protected double nilaiE;
     protected double luas;
     protected double volume;
+    protected double keliling;
+    protected double luasPermukaan;
     protected String namaBangun;
 
     public Bangun() {}
@@ -24,6 +28,12 @@ public class Bangun {
     }
     public double getLuas() {
         return luas;
+    }
+    public double getKeliling(){
+        return keliling;
+    }
+    public double getLuasPermukaan(){
+        return luasPermukaan;
     }
     public String getName() {
         return namaBangun;

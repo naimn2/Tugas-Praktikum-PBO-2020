@@ -53,7 +53,7 @@ public class Koordinator extends Anggota{
                     System.out.println(" Petugas Terpilih : ");
                     int j=1;
                     for (String petugasTerpilih : kegiatan.get(inp-1).getPelaksana()) {
-                        System.out.println(j+petugasTerpilih);
+                        System.out.println(j+". "+petugasTerpilih);
                         j++;
                     }
                     System.out.println("=================================================");
@@ -73,8 +73,9 @@ public class Koordinator extends Anggota{
                         setPelaksanaKegiatan();
                     }
                 }
-                kegiatan.get(inp-1).addPelaksana(anggotaBidang.get(inp-1));
+                kegiatan.get(inp-1).addPelaksana(anggotaBidang.get(inp1-1));
             } catch (Exception e) {
+                System.out.println(e.getMessage());
                 System.out.println("Input tidak valid");
                 infoKegiatan();
             }
