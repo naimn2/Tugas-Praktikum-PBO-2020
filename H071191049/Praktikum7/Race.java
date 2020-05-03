@@ -8,6 +8,7 @@ public class Race {
     //synchronizedList berfungsi agar peserta yang finish masuk secara teratur ke list finish
     public List<Integer> finish = Collections.synchronizedList(new ArrayList<Integer>());
 
+    
     public void start() {
         //jika jumlah peserta >= 3 maka race dimulai
         if (peserta.size() >= 3) {
@@ -28,11 +29,10 @@ public class Race {
                 for(int i=3;i<finish.size();i++){
                     System.out.printf("Runner %d-Loses\n",finish.get(i));
                 }
-                return;
+                isStart=false;
             }
-
         }
-
+        System.out.println("Execution Time: "+((double)(System.currentTimeMillis()-Main.start)/1000));
     }
 
 }
