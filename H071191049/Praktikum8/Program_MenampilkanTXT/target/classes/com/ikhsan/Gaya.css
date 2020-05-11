@@ -1,0 +1,30 @@
+#areaStyle{
+    -fx-text-fill:#474443;
+    -fx-font-family:'arial';
+    -fx-font-size:16;
+}
+
+#buttonStyle{
+    -fx-background-color: #FFF6B7;
+    -fx-font-size: 20;
+    -fx-text-fill: #474443;
+    -fx-font-weight: bold;
+    -fx-background-radius: 9;
+}
+#buttonStyle:hover{
+    -fx-background-color: rgb(233, 219, 111);
+    -fx-font-size: 20;
+    -fx-text-fill: #3d3837;
+    -fx-font-weight: bold;
+    -fx-background-radius: 9;
+}
+#latar{
+    -fx-background-color: #474443;
+}
+#label{
+    -fx-text-fill:#3d3837;
+    -fx-font-size:18;
+}
+#title{
+    -fx-background-color:#FFF6B7;
+}

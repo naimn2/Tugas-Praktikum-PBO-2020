@@ -1,0 +1,64 @@
+#minButton{
+	-fx-background-color: #34373F;
+	-fx-border-width: 0.5px;
+	-fx-border-color: #C7C8CC;
+	-fx-border-radius: 40px 0px 0px 40px;
+	-fx-font-size:7;
+	-fx-font-family:'Lucida Sans Unicode';
+	-fx-text-fill:  #C7C8CC;
+}
+#minButton:hover {
+    -fx-border-color: rgb(77, 113, 231);
+}
+#minButton:active {
+	-fx-position:relative;
+	-fx-top:1px;
+}
+#maxButton{
+	-fx-background-color: #34373F;
+	-fx-border-width: 0.5px;
+	-fx-border-color: #C7C8CC;
+	-fx-border-radius: 0px 40px 40px 0px;
+	-fx-font-size:7;
+	-fx-font-family:'Lucida Sans Unicode';
+	-fx-text-fill:  #C7C8CC;
+}
+#maxButton:hover {
+    -fx-border-color: rgb(77, 113, 231);
+}
+#maxButton:active {
+	-fx-position:relative;
+	-fx-top:1px;
+}
+#infoLabel{
+	-fx-background-color: #34373F;
+	-fx-border-width: 0.5px;
+	-fx-border-color: #C7C8CC;
+	-fx-font-size:9;
+	-fx-font-family:'Lucida Sans Unicode';
+	-fx-text-fill:  #C7C8CC;
+}
+#sendButton{
+	-fx-background-color:#08DC5E;
+    -fx-background-radius:4;
+	-fx-display:inline-block;
+	-fx-cursor:hand;
+	-fx-font-family:Arial;
+	-fx-font-size:13;
+    -fx-text-decoration:none;
+	-fx-text-fill:white;
+	-fx-font-weight:bold;
+}
+#sendButton:hover {
+    -fx-background-color:#41DC08;
+	-fx-text-fill:#ffffff;
+	
+}
+#sendButton:active {
+	-fx-position:relative;
+	-fx-top:1px;
+}
+#imageButton{
+	-fx-background-color: transparent;
+}
+

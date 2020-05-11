@@ -1,0 +1,7 @@
+Ayam Geprek;12000;ayamgeprek.png
+Ayam Kecap;10000;ayamkecap.png
+Mie Pangsit;15000;miepangsit.png
+Bakso;15000;bakso.png
+Sate Ayam;15000;sate.png
+Coto Makassar;20000;cotomakassar.png
+Nasi Goreng;10000;nasigoreng.png
