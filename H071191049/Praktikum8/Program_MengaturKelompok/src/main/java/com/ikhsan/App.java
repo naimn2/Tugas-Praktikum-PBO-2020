@@ -77,9 +77,7 @@ public class App extends Application{
         stage.setTitle("Program Pembagian Kelompok");
         Image icon = null;
         try {
-            icon = new Image(new FileInputStream("D:/COMPUTER-SCIENCE/JAVA/CS-SEMESTER-2/"
-            +"Tugas-Praktikum-PBO/H071191049/Praktikum8/"
-            +"PROGRAM_MENGATURKELOMPOK/src/main/java/com/ikhsan/klp.png"));
+            icon = new Image(new FileInputStream("src/main/java/com/ikhsan/klp.png"));
         }catch (FileNotFoundException e) {
             e.printStackTrace();
         }

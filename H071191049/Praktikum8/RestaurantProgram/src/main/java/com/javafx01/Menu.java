@@ -38,7 +38,7 @@ public class Menu {
         Mypath path = new Mypath();
         Image image = null;
         try {
-            image = new Image(new FileInputStream(path.getPath()+"Logo.png"));
+            image = new Image(new FileInputStream(path.getPath("Logo.png")));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

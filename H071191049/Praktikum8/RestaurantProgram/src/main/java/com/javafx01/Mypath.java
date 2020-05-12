@@ -1,8 +1,17 @@
 package com.javafx01;
 
+import java.io.*;
+
 public class Mypath {
-    public String getPath(){
-        return "D:/COMPUTER-SCIENCE/JAVA/CS-SEMESTER-2/Tugas-Praktikum-PBO/H071191049/Praktikum8/RestaurantProgram/src/main/java/com/javafx01/SumberData/";
+    public String getPath(String name){
+        String absolute=null;
+        try {
+            File f = new File("RestaurantProgram/src/main/java/com/javafx01/SumberData/"+name);
+            absolute = f.getAbsolutePath(); 
+        } catch (Exception e) {
+
+        }
+        return absolute;
     }
     public String toRp(int money){
         String harga = String.valueOf(money);

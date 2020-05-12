@@ -19,7 +19,7 @@ public class App extends Application {
         stage.setTitle("Restaurant-Bugis");
         Image icon = null;
         try {
-            icon = new Image(new FileInputStream(path.getPath()+"icon.png"));
+            icon = new Image(new FileInputStream(path.getPath("icon.png")));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

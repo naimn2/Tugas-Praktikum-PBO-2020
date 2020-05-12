@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class DataSource {
     private String read (String name){
         Mypath mypath = new Mypath();
-        Path path = Paths.get(mypath.getPath()+name);
+        Path path = Paths.get(mypath.getPath(name));
         String fileContent = null;
         try {
             fileContent = new String(Files.readAllBytes(path));

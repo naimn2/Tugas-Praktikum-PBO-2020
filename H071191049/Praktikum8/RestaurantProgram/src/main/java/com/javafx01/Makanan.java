@@ -41,7 +41,7 @@ public class Makanan {
     ImageView getImage() {
         Image image = null;
         try {
-            image = new Image(new FileInputStream(path.getPath()+imagePath));
+            image = new Image(new FileInputStream(path.getPath(imagePath)));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
