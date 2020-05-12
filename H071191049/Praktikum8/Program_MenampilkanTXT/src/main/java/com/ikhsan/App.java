@@ -79,9 +79,8 @@ public class App extends Application {
         stage.setScene(scene);
         Image icon = null;
         try {
-            icon = new Image(new FileInputStream("D:/COMPUTER-SCIENCE/JAVA/CS-SEMESTER-2/"
-            +"Tugas-Praktikum-PBO/H071191049/Praktikum8/"
-            +"PROGRAM_MENAMPILKANTXT/src/main/java/com/ikhsan/txtO.png"));
+            File file = new File("PROGRAM_MENAMPILKANTXT/src/main/java/com/ikhsan/txtO.png");
+            icon = new Image(new FileInputStream(file.getAbsolutePath()));
         }catch (FileNotFoundException e) {
             e.printStackTrace();
         }
